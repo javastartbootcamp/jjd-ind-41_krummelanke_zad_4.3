@@ -7,11 +7,14 @@ class Rectangle {
         this.shortLenght = shortLenght;
     }
 
-    public double getLongLenght() {
-        return longLenght;
+    private double calculateRectanglePerimeter() {
+        return 2 * longLenght + 2 * shortLenght;
     }
 
-    public double getShortLenght() {
-        return shortLenght;
+    public void rectanglePerimeterInfo() {
+        double rectanglePerimeter = calculateRectanglePerimeter();
+        System.out.println("Obwód prostokąta o bokach: " + longLenght
+                + " cm, " + shortLenght + " cm, " + "wynosi: " + rectanglePerimeter + " cm");
     }
+
 }
