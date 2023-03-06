@@ -10,15 +10,19 @@ class Triangle {
 
     }
 
-    private double calculateTrianglePerimeter() {
+    public double trianglePerimeter() {
         return edgeA + edgeB + edgeC;
     }
 
-    public void trianglePerimeterInfo() {
-        double trianglePerimeter = calculateTrianglePerimeter();
-        System.out.println("Obwód trójkąta o bokach: " + edgeA + " cm, "
-                + edgeB + " cm, " + edgeC + " cm, "
-                + "wynosi: " + trianglePerimeter + " cm");
+    public double getEdgeA() {
+        return edgeA;
     }
 
+    public double getEdgeB() {
+        return edgeB;
+    }
+
+    public double getEdgeC() {
+        return edgeC;
+    }
 }

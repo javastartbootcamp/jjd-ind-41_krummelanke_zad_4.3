@@ -5,12 +5,11 @@ class Square {
         this.sideLenght = sideLenght;
     }
 
-    private double calculateSquareArea() {
+    public double squareArea() {
         return sideLenght * sideLenght;
     }
 
-    public void squareAreaInfo() {
-        double squareArea = calculateSquareArea();
-        System.out.println("Pole kwadratu o boku równym " + sideLenght + " cm wynosi: " + squareArea + " cm2");
+    public double getSideLenght() {
+        return sideLenght;
     }
 }

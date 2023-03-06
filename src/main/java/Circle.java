@@ -5,12 +5,11 @@ class Circle {
         this.radius = radius;
     }
 
-    private double calculateCircleArea() {
+    public double circleArea() {
         return 3.14159 * radius * radius;
     }
 
-    public void circleAreaInfo() {
-        double circleArea = calculateCircleArea();
-        System.out.println("Pole koła o promieniu równym " + radius + " cm wynosi: " + circleArea + " cm2");
+    public double getRadius() {
+        return radius;
     }
 }
